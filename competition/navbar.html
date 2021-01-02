@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<title>sidebar</title>
+</head>
+<body>
+
+    <div class="navContainer">
+       <nav class="navBar" id = 'navID'>
+
+        <button onclick = 'toggleNav(this)' type = 'button' class = 'toggleCollapse' id = 'toggleButton' > <span class = 'toggleIcon'>
+
+        </span> </button>
+
+        <ul class="sideNav">
+            <li class = 'navItem'>
+                <a href="" class="siteName">dailyname</a>
+            </li>
+
+            <li class = 'navItem'>
+                <a href="" class="siteName">dailyname</a>
+            </li>
+
+            <li class = 'navItem'>
+                <a href="" class="siteName">dailyname</a>
+            </li>
+
+            <li class = 'navItem'>
+                <a href="" class="siteName">dailyname</a>
+            </li>
+
+            <li class = 'navItem'>
+                <a href="" class="siteName">dailyname</a>
+            </li>
+
+            <li class = 'navItem'>
+                <a href="" class="siteName">
+
+
+                    <i class = 'fab fa-facebook-f'></i>
+                    <i class = 'fab fa-twitter'></i>
+
+                    <i class = 'fab fa-instagram'></i>
+                    <i class = 'fab fa-youtube'></i>
+
+
+                </a>
+            </li>
+
+            
+        </ul>
+
+       </nav>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+
+<script>
+
+    var toggleNav = (Icon) =>{
+
+        Icon.classList.toggle('changeToggle');
+        var navigation = document.getElementById('navID');
+        Style = window.getComputedStyle(navigation),
+        right = Style.getPropertyValue('right');
+
+
+        if(right == '0px'){
+            navigation.style.right = '-260px';
+        }else{
+            navigation.style.right = '0px';
+        }
+    
+    }
+</script>
+</body>
+</html>
