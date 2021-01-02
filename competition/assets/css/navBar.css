@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* #1A1A1D purple */
+:root {
+    --bgColorID: #59253A;
+    --navDec: #0677A1;
+    --bgtra: transparent;
+    --navwidth: 320px;
+    --navmarg: -320px;
+    --navBg: #895061;
+    --togColor: #950740;
+    --font: 'Poppins', sans-serif;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgColorID);
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+}
+
+.navContainer {
+    position: relative;
+    width: var(--navwidth);
+    margin-left: var(--navmarg);
+    transition: 0.8s ease;
+    border-radius: 50px;
+    background: var(--navBg);
+    box-shadow: 5px 5px 0px #161619,
+        -5px -5px 0px #1e1e21;
+    font-family:var(--font);
+
+
+}
+
+.navBar {
+
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color:var(--navBg);
+
+
+
+}
+
+.navBtn {
+    height: 100vh;
+    width: 20vmin;
+    padding-right: 12px;
+    position: absolute;
+    right: -15vmin;
+    text-align: center;
+
+}
+
+.navBtn:hover .toggleIcon,
+.toggleIcon::before,
+.toggleIcon::after {
+
+    transform: rotate(360deg);
+
+}
+
+.sideNav>.navItem:last-child>.siteName>i {
+
+    padding: 0.5rem;
+}
+
+.sideNav>.navItem:first-child {
+    background: #2D4159;
+    margin-bottom: 25px;
+}
+
+.toggleCollapse {
+
+    position: absolute;
+    margin-right: 3.1em;
+    margin-top: 1em;
+    content: '';
+    outline: inherit;
+    border: 0px;
+    background: transparent;
+
+}
+
+
+
+.toggleIcon,
+.toggleIcon::before,
+.toggleIcon::after {
+
+
+    content: '';
+    width: 33px;
+    height: 4.5px;
+    position: fixed;
+    background: var(--navDec);
+    border-radius: 2em;
+    border: 1px solid var(--navDec);
+    cursor: pointer;
+    padding: 1px;
+    transition: 0.8s ease;
+    margin-top: 0.6em;
+}
+
+.toggleIcon::after {
+    position: absolute;
+    left: -1px;
+    top: 0.7rem;
+
+
+}
+
+.toggleIcon::before {
+    position: absolute;
+    left: -1px;
+
+}
+
+
+.changeToggle>.toggleIcon {
+
+    background: transparent;
+    border: transparent;
+
+}
+
+.changeToggle>.toggleIcon::after {
+
+    transform: rotate(45deg);
+    top: 0;
+
+}
+
+.changeToggle>.toggleIcon::before {
+
+    transform: rotate(-45deg);
+
+
+}
+
+
+.navBar>.sideNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.navItem {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.navItem>.siteName {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.1em;
+    padding: 1em;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+
+
+
+}
+
+
+.navItem>.siteName:hover {
+
+
+    background-color: var(--navDec);
+    color: white;
+
+
+}

@@ -7,37 +7,46 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" href="assets/style.css">
-<title>sidebar</title>
+<link rel="stylesheet" href="./assets/css/navBar.css">
+<title>navsidebar</title>
+
+<style>
+
+</style>
 </head>
+
 <body>
 
-    <div class="navContainer">
-       <nav class="navBar" id = 'navID'>
+    <div class="navContainer"id = 'navID'>
+       <nav class="navBar" >
 
-        <button onclick = 'toggleNav(this)' type = 'button' class = 'toggleCollapse' id = 'toggleButton' > <span class = 'toggleIcon'>
+       <div class="navBtn"> <button onclick = 'toggleNav(this)' type = 'button' class = 'toggleCollapse' id = 'toggleButton' > <span class = 'toggleIcon'>
 
-        </span> </button>
+    </span> </button></div>
 
         <ul class="sideNav">
             <li class = 'navItem'>
-                <a href="" class="siteName">dailyname</a>
+                <a href="" class="siteName" >TECH BASH</a>
             </li>
 
             <li class = 'navItem'>
-                <a href="" class="siteName">dailyname</a>
+                <a href="home.html" active class="siteName">HOME</a>
             </li>
 
             <li class = 'navItem'>
-                <a href="" class="siteName">dailyname</a>
+                <a href="projects.html" class="siteName">PROJECTS</a>
             </li>
 
             <li class = 'navItem'>
-                <a href="" class="siteName">dailyname</a>
+                <a href="testimonials.html" class="siteName">TESTIMONIALS</a>
             </li>
 
             <li class = 'navItem'>
-                <a href="" class="siteName">dailyname</a>
+                <a href="career.html" class="siteName">CAREERS</a>
+            </li>
+
+            <li class = 'navItem'>
+                <a href="contact.html" class="siteName">CONTACT US</a>
             </li>
 
             <li class = 'navItem'>
@@ -46,7 +55,6 @@
 
                     <i class = 'fab fa-facebook-f'></i>
                     <i class = 'fab fa-twitter'></i>
-
                     <i class = 'fab fa-instagram'></i>
                     <i class = 'fab fa-youtube'></i>
 
