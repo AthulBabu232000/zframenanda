@@ -9,7 +9,7 @@
             --mainContainerColor:white;
             --navContentHover:	#FF00CC;
             --footLight:#d35400;
-            --gradient: linear-gradient(90deg, #f0027f, #75489f);
+            --gradients: linear-gradient(90deg, #f0027f, #75489f);
         }
         
         html,
@@ -107,7 +107,7 @@
 			height: 3px;
 
 			margin: 10px auto;
-			background-color: var(--gradient) ;
+			background-color:linear-gradient(90deg, #f0027f, #75489f); 
 
 			border-radius: 10px;
 
@@ -187,15 +187,15 @@
      
 
       
-     
-   
-
-
-       
-
         .menu > .sideNav > .navItem:hover{
-            border-left: 10px solid var(--gradient);
+            border-left: 10px solid  #75489f;
            
+           
+        }
+
+        .menu > .sideNav > .navItem:hover a{
+
+            color: #f0027f !important;
            
         }
      
