@@ -194,8 +194,7 @@
        
 
         .menu > .sideNav > .navItem:hover{
-            border-left: 10px solid var(--navContentHover);
-            border-right: 10px solid var(--navContentHover);
+            border-left: 10px solid var(--gradient);
            
            
         }
@@ -205,7 +204,7 @@
         .menu > .sideNav > .navItem:hover .siteName{
 
             
-            color:var(--bgColor);
+            color:var(--gradient);
             
 
 
