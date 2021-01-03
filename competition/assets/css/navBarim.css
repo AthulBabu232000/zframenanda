@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        
+        
+        
         :root{
-            --bgColor:#0b0c10;
-            --fontMain:;
-            --navBarColor:#1f2833;
-            --mainContainerColor:#0b0c10;
+            --bgColor:whitesmoke;
+            --fontMain:'Poppins', sans-serif;
+            --navBarColor:whitesmoke;
+            --mainContainerColor:white;
             --navContentHover:	#FF00CC;
             --footLight:#d35400;
+            --gradient: linear-gradient(90deg, #f0027f, #75489f);
         }
         
         html,
 		body {
 			position: relative;
-			height: 100%;
+            height: 100%;
+        
 		}
 
 		body {
@@ -49,9 +55,9 @@
 		.menu {
 			min-width: 100px;
 			width: 70%;
-			max-width: 320px;
+			max-width: 300px;
 			background-color: var(--navBarColor);
-            color: #fff;
+            color: black;
             display:flex;
             justify-content:flex-start;
             z-index:-2;
@@ -101,7 +107,7 @@
 			height: 3px;
 
 			margin: 10px auto;
-			background-color: #fff;
+			background-color: var(--gradient) ;
 
 			border-radius: 10px;
 
@@ -208,47 +214,13 @@
         .menu > .sideNav > .navItem > .siteName
        {
             text-decoration:none;
-            color:white;
+            color:black;
             font-weight:700;
             margin-left:5%;
 
         }
 
-        .navHeading{
 
-            width:100%;
-            text-align:center;
-            position:absolute;
-            top:3vh;
-            font-size:30px;
-            font-weight:700;
-            color:white;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
-
-        .navHeading > ul {
-
-            list-style-type:none;
-            text-decoration:none;
-            color:white;
-            padding-inline-start:0px;
-
-        
-
-        }
-
-        .navHeading > ul >li>a{
-
-            list-style-type:none;
-            text-decoration:none;
-            color:white;
-            padding-inline-start:0px;
-
-        
-
-        }
 
         .menu > .sideNav > .navItem > .siteName >a > i{
             text-decoration:none;
